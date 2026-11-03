@@ -1,0 +1,6 @@
+# Install PyTorch first (see README / install.ps1), then: pip install -r requirements.txt
+chatterbox-tts==0.1.7
+imageio-ffmpeg==0.8.1
+soundfile==0.14.0
+pillow==11.3.0
+numpy>=1.24,<3
