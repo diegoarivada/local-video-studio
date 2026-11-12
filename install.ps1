@@ -19,6 +19,7 @@ if ($Cpu) {
     & $py -m pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu130
 }
 & $py -m pip install -r requirements.txt
+& $py -m pip install -q --no-deps -r requirements-overrides.txt   # patched versions, see the file
 
 if (-not (Get-Command ollama -ErrorAction SilentlyContinue)) {
     Write-Host "Install Ollama from https://ollama.com/download, then run: ollama pull $Model" -ForegroundColor Yellow

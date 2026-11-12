@@ -18,6 +18,7 @@ else
   $PY -m pip install torch torchaudio   # CPU on Linux, Metal (mps) on Apple Silicon
 fi
 $PY -m pip install -r requirements.txt
+$PY -m pip install -q --no-deps -r requirements-overrides.txt   # patched versions, see the file
 
 if command -v ollama >/dev/null 2>&1; then ollama pull "$MODEL"; else
   echo "Install Ollama from https://ollama.com/download, then run: ollama pull $MODEL"; fi
