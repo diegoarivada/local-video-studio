@@ -1,0 +1,14 @@
+# Security overrides, applied after requirements.txt with --no-deps (see install.ps1 / install.sh).
+# chatterbox-tts 0.1.7 hard-pins older gradio/transformers/diffusers that have known CVEs.
+# This set was checked November 12, 2026: Chatterbox still generates speech and Pillow 13 works.
+# setuptools stays at 81.0.0: 82+ removes pkg_resources, which Chatterbox's watermarker imports.
+pillow==13.0.0
+transformers==5.22.1
+tokenizers==0.23.3
+safetensors==0.8.0
+diffusers==0.42.1
+gradio==6.31.0
+gradio_client==2.7.2
+hf-gradio==0.4.1
+starlette==1.10.0
+setuptools==81.0.0
