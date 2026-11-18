@@ -6,7 +6,7 @@ pillow==13.0.0
 transformers==5.23.0
 tokenizers==0.23.3
 safetensors==0.8.0
-diffusers==0.42.1
+diffusers==0.43.0
 gradio==6.32.0
 gradio_client==2.7.2
 hf-gradio==0.4.1
