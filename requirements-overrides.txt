@@ -3,7 +3,7 @@
 # This set was checked November 12, 2026: Chatterbox still generates speech and Pillow 13 works.
 # setuptools stays at 81.0.0: 82+ removes pkg_resources, which Chatterbox's watermarker imports.
 pillow==13.0.0
-transformers==5.23.0
+transformers==5.24.0
 tokenizers==0.23.3
 safetensors==0.8.0
 diffusers==0.43.0
